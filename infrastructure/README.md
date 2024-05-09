@@ -19,3 +19,12 @@ Note: access_key, secret_key should allow reading/writing to the bucket in step 
     sh deploy.sh
     ```
 7. OAS file for enpoint could be found under API Gateway> APIs > api_id > Export, and export latest configuration as JSON, sample OAS30_latest.json is saved in scripts folder
+
+
+## Architecture Components
+- API Gateway to handle REST API requests 
+- Lambda has been hooked up on API gateway
+- Lambda could be run standalone as well (event driven)
+- DynamoDB has been used for persisting the data
+- Whole solution is IaC and serverless
+- Sample UI has been built on NextJS / ReactJS
