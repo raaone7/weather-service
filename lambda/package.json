@@ -1,0 +1,53 @@
+{
+	"name": "weather-service",
+	"version": "1.0.0",
+	"description": "Weather Service",
+	"private": true,
+	"scripts": {
+		"lint": "biome check . --apply",
+		"format": "biome format . --write",
+		"fix": "pnpm format && pnpm lint",
+		"check": "biome ci .",
+		"typecheck": "tsc --noEmit -p tsconfig.build.json",
+		"build": "node esbuild.js",
+		"dev": "tsx --env-file=.env dev/lambda.ts",
+		"latest": "pnpm update --latest",
+		"test": "vitest run",
+		"test:ui": "vitest --ui"
+	},
+	"type": "module",
+	"keywords": [],
+	"license": "ISC",
+	"devDependencies": {
+		"@aws-sdk/types": "^3.567.0",
+		"@biomejs/biome": "^1.7.3",
+		"@smithy/types": "^2.12.0",
+		"@types/aws-lambda": "^8.10.137",
+		"@types/luxon": "^3.4.2",
+		"@types/node": "^20.12.10",
+		"@vitest/ui": "^1.6.0",
+		"dotenv": "^16.4.5",
+		"esbuild": "^0.21.1",
+		"pino-pretty": "^11.0.0",
+		"tsx": "^4.9.3",
+		"typescript": "^5.4.5",
+		"vitest": "^1.6.0"
+	},
+	"engines": {
+		"node": ">=20",
+		"pnpm": ">=9"
+	},
+	"packageManager": "pnpm@9.1.0",
+	"volta": {
+		"node": "20.12.0",
+		"pnpm": "9.1.0"
+	},
+	"dependencies": {
+		"@aws-sdk/client-dynamodb": "^3.569.0",
+		"@aws-sdk/credential-providers": "^3.569.0",
+		"@aws-sdk/lib-dynamodb": "^3.569.0",
+		"axios": "^1.6.8",
+		"luxon": "^3.4.4",
+		"pino": "^9.0.0"
+	}
+}

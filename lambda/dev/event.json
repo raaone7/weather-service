@@ -1,0 +1,6 @@
+{
+	"action": "getWeather",
+	"payload": {
+		"city": "Melbourne"
+	}
+}
