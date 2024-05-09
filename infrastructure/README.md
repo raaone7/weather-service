@@ -18,4 +18,4 @@ Note: access_key, secret_key should allow reading/writing to the bucket in step 
     ```sh
     sh deploy.sh
     ```
-7. OAS file for enpoint could be found under API Gateway> APIs > api_id > Export, and export latest configuration as JSON, sample OAS30_c91gwynsbd_latest.json is saved in scripts folder
+7. OAS file for enpoint could be found under API Gateway> APIs > api_id > Export, and export latest configuration as JSON, sample OAS30_latest.json is saved in scripts folder
