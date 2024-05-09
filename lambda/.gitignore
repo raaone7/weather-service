@@ -1,7 +1,6 @@
 build
 node_modules
 .npmrc
-.env
 
 # Other
 .DS_Store
